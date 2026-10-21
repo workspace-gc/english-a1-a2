@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#1c2f26" />
+  <title>Inglés A1–A2 · Guía interactiva de gramática y vocabulario</title>
+  <meta name="description" content="Diez unidades interactivas de inglés A1–A2: demostrativos, present simple, present continuous, WH questions, adverbios de frecuencia, fechas, pasados, vocabulario y autoevaluación." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Caveat:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="src/styles/base.css" />
+  <link rel="stylesheet" href="src/styles/layout.css" />
+  <link rel="stylesheet" href="src/styles/components.css" />
+  <script type="module" src="src/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="board" aria-label="Presentación de la guía">
+    <div class="board__inner">
+      <p class="board__kicker">Clase de hoy</p>
+      <h1 class="board__title">
+        Inglés <span class="board__range">A1–A2</span>
+        <svg class="board__underline" viewBox="0 0 424 28" aria-hidden="true" focusable="false">
+          <path class="board__underline-path" d="M6 16 C 90 8, 210 24, 300 13 S 402 10, 418 14" />
+        </svg>
+      </h1>
+      <p class="board__lede">
+        Diez unidades de gramática, vocabulario y práctica.
+        Lee la teoría, haz los ejercicios y recibe la corrección al instante.
+      </p>
+
+      <div class="board__progress" role="status" aria-live="polite">
+        <div class="board__progress-track" aria-hidden="true">
+          <div class="board__progress-fill" id="progress-fill"></div>
+        </div>
+        <p class="board__progress-label" id="progress-label">0 de 10 unidades completadas</p>
+      </div>
+
+      <p class="board__note" aria-hidden="true">Empieza por la unidad 1 <span class="board__note-arrow">↓</span></p>
+    </div>
+  </header>
+
+  <nav class="tabs" aria-label="Unidades">
+    <div class="tabs__track" id="tabs"></div>
+  </nav>
+
+  <main id="contenido" class="sheet" tabindex="-1">
+    <span class="sheet__punch sheet__punch--1" aria-hidden="true"></span>
+    <span class="sheet__punch sheet__punch--2" aria-hidden="true"></span>
+    <span class="sheet__punch sheet__punch--3" aria-hidden="true"></span>
+    <div id="unidad">
+      <noscript>
+        <p>Esta guía necesita JavaScript para mostrar los ejercicios interactivos. Activa JavaScript en tu navegador y recarga la página.</p>
+      </noscript>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <p>Guía de estudio de inglés A1–A2 · Hecha para practicar, no solo para leer.</p>
+  </footer>
+</body>
+</html>

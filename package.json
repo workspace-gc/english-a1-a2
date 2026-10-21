@@ -1,0 +1,11 @@
+{
+  "name": "english-a1-a2",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Guía interactiva de inglés A1-A2: gramática, vocabulario y práctica (HTML + CSS + JS vanilla, sin dependencias).",
+  "scripts": {
+    "test": "node --test",
+    "dev": "python3 -m http.server 8080"
+  }
+}
