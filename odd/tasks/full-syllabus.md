@@ -31,14 +31,14 @@
 - [x] INF-5: Reescribir `main.js` — lógica de acordeón + routing
 
 ### Fase 1: Enriquecer unidades 1–10
-- [ ] F1-1: Unidades 1–5 (demostrativos, PS, PC, WH, adverbios)
-- [ ] F1-2: Unidades 6–10 (fechas, past simple, past continuous, vocabulario, test I)
+- [x] F1-1: Unidades 1–5 (demostrativos, PS, PC, WH, adverbios)
+- [x] F1-2: Unidades 6–10 (fechas, past simple, past continuous, vocabulario, test I)
 
 ### Fase 2: Gramática fundamental (unidades 11–17)
-- [ ] F2: Pronombres, sustantivos, artículos, genitivo, there is/are, preposiciones, orden
+- [x] F2: Pronombres, sustantivos, artículos, genitivo, there is/are, preposiciones, orden
 
 ### Fase 3: Vocabulario temático (unidades 18–27)
-- [ ] F3: Saludos, números, días, familia, hogar, comida, transporte, profesiones, indicaciones, navidad
+- [x] F3: Saludos, números, días, familia, hogar, comida, transporte, profesiones, indicaciones, navidad
 
 ### Fase 4: Gramática avanzada (unidades 28–36)
 - [ ] F4: Futuro, imperativo, modales, PP, PPC, comparativos, condicionales 0/1/2
