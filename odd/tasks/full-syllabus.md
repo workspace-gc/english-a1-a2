@@ -51,5 +51,9 @@
 - [x] TST: Verificar `npm test` verde
 
 ## Progreso
-- Rama creada: pendiente
-- Commits: —
+- Rama creada: `feature/full-syllabus`
+- Commits:
+  - `752103d`: feat(nav): add module accordion sidebar navigation and tip theory block
+  - `3be06e1`: feat(content): enrich units 1-10 and add units 11-27 (foundations and thematic vocabulary)
+  - `067d89c`: feat(content): add advanced grammar units 28-36 (conditionals, perfect tenses, modals, future)
+  - `f81b931`: feat(content): add pronunciation and practical skills units 37-38 and verify 38-unit suite
