@@ -41,7 +41,7 @@
 - [x] F3: Saludos, números, días, familia, hogar, comida, transporte, profesiones, indicaciones, navidad
 
 ### Fase 4: Gramática avanzada (unidades 28–36)
-- [ ] F4: Futuro, imperativo, modales, PP, PPC, comparativos, condicionales 0/1/2
+- [x] F4: Futuro, imperativo, modales, PP, PPC, comparativos, condicionales 0/1/2
 
 ### Fases 5–6: Pronunciación y Habilidades (unidades 37–38)
 - [ ] F5-6: Pronunciación completa + speaking y estrategias

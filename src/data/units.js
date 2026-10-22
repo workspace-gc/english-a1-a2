@@ -2258,4 +2258,475 @@ export const UNITS = [
       ],
     },
   },
+
+  // =============================================================
+  // 28 · Futuro: Will vs. Going to
+  // =============================================================
+  {
+    id: "future",
+    num: 28,
+    title: "Futuro: Will vs. Going to",
+    tagline: "I will help you · We are going to travel · won't",
+    intro: "En inglés existen dos formas principales para hablar del futuro: 'will' para decisiones espontáneas y promesas, y 'be going to' para planes ya organizados o predicciones con evidencia directa.",
+    theory: [
+      {
+        type: "table",
+        caption: "Contraste: Will vs. Going to",
+        head: ["Aspecto", "Will + infinitivo base", "Be going to + infinitivo base"],
+        rows: [
+          ["Uso principal 1", "Decisión espontánea en el momento", "Plan o intención previa organizada"],
+          ["Uso principal 2", "Promesa u ofrecimiento voluntario", "Predicción con evidencia visual inmediata"],
+          ["Afirmativa", "I will (I'll) call you later.", "I am going to visit my parents on Sunday."],
+          ["Negativa", "I will not (won't) tell anyone.", "He isn't going to buy that car."],
+          ["Interrogativa", "Will you come to the party?", "Are you going to study tonight?"],
+        ],
+      },
+      {
+        type: "tip",
+        html: "💡 En conversación real, <em lang='en'>will</em> casi siempre se contrae: <em lang='en'>I'll, you'll, he'll, she'll, we'll, they'll</em>. La contracción negativa es <em lang='en'>won't</em> /woʊnt/ (cuidado de no confundir con <em lang='en'>want</em> /wɒnt/).",
+      },
+      {
+        type: "examples",
+        items: [
+          { en: "The phone is ringing. — I'll answer it!", es: "El teléfono está sonando. — ¡Yo contesto! (decisión espontánea)" },
+          { en: "Look at those black clouds! It is going to rain.", es: "¡Mira esos nubarrones negros! Va a llover. (evidencia visible)" },
+          { en: "We are going to move to London next month.", es: "Nos vamos a mudar a Londres el mes que viene. (plan previsto)" },
+          { en: "Don't worry, I won't forget your birthday.", es: "No te preocupes, no olvidaré tu cumpleaños. (promesa)" },
+        ],
+      },
+    ],
+    practice: {
+      hint: "Distingue entre decisiones espontáneas (will) y planes o evidencias (going to).",
+      exercises: [
+        { id: "fut1", type: "choice", prompt: "The doorbell rings. You say to your roommate:", options: ["I will get it!", "I am going to get it!", "I get it!", "I got it!"], answer: 0, explanation: "Para una decisión tomada al instante en que suena el timbre se emplea 'will': I'll get it!" },
+        { id: "fut2", type: "fill", prompt: "Completa con la forma correcta de 'have' (plan organizado):", sentence: "We ______ a party next Saturday. We bought the drinks yesterday.", blanks: [{ accepts: ["are going to have"] }], explanation: "Es un plan organizado con antelación: are going to have." },
+        { id: "fut3", type: "choice", prompt: "Look at that boy on the edge of the pool! He ______ fall in!", options: ["is going to", "will", "shall", "does"], answer: 0, explanation: "Hay evidencia visual en tiempo real de lo que va a ocurrir: is going to fall." },
+        { id: "fut4", type: "fill", prompt: "Completa la promesa en negativa:", sentence: "I promise I ______ tell anyone your secret.", blanks: [{ accepts: ["won't", "will not"] }], explanation: "Won't (o will not) expresa una promesa de no hacer algo en el futuro." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // 29 · Modo Imperativo y Respuestas Cortas
+  // =============================================================
+  {
+    id: "imperative",
+    num: 29,
+    title: "Modo Imperativo y Respuestas Cortas",
+    tagline: "Open the door · Don't run · Yes, I do · Let's go",
+    intro: "El modo imperativo sirve para dar instrucciones, advertencias, consejos y órdenes directas. Las respuestas cortas permiten contestar con educación y naturalidad a preguntas de 'sí/no'.",
+    theory: [
+      {
+        type: "table",
+        caption: "El modo imperativo",
+        head: ["Tipo", "Estructura", "Ejemplo", "Traducción"],
+        rows: [
+          ["Afirmativo", "Verbo en forma base (sin to ni sujeto)", "Open your book, please.", "Abre tu libro, por favor."],
+          ["Negativo", "Don't + verbo en forma base", "Don't touch that wire!", "¡No toques ese cable!"],
+          ["Sugerencia conjunta", "Let's + verbo en forma base", "Let's take a break.", "Tomemos un descanso."],
+          ["Sugerencia negativa", "Let's not + verbo en forma base", "Let's not argue about this.", "No discutamos sobre esto."],
+        ],
+      },
+      {
+        type: "table",
+        caption: "Short answers (Respuestas cortas por auxiliar)",
+        head: ["Pregunta", "Respuesta afirmativa", "Respuesta negativa"],
+        rows: [
+          ["Are you tired?", "Yes, I am.", "No, I'm not."],
+          ["Do you speak English?", "Yes, I do.", "No, I don't."],
+          ["Does he live in Spain?", "Yes, he does.", "No, he doesn't."],
+          ["Did you watch the match?", "Yes, I did.", "No, I didn't."],
+          ["Can you swim?", "Yes, I can.", "No, I can't."],
+        ],
+      },
+      {
+        type: "tip",
+        html: "💡 ¡Nunca contraigas un pronombre con el verbo auxiliar al final de una respuesta corta afirmativa! Decir 'Yes, I'm' o 'Yes, he's' es un error gramatical grave. Siempre usa la forma completa: <em lang='en'>Yes, I am / Yes, he is / Yes, they are</em>.",
+      },
+      {
+        type: "examples",
+        items: [
+          { en: "Please sit down and make yourself comfortable.", es: "Por favor siéntate y ponte cómodo." },
+          { en: "Don't be late for the meeting tomorrow.", es: "No llegues tarde a la reunión de mañana." },
+          { en: "Let's go to the Italian restaurant tonight!", es: "¡Vamos al restaurante italiano esta noche!" },
+          { en: "Do you have any pets? — Yes, I do.", es: "¿Tienes mascotas? — Sí." },
+        ],
+      },
+    ],
+    practice: {
+      hint: "Formula órdenes e instrucciones y responde a preguntas usando el auxiliar apropiado.",
+      exercises: [
+        { id: "imp1", type: "transform", prompt: "Convierte a imperativo negativo: 'You must not shout in class.'", sentence: "You must not shout in class.", accepts: ["Don't shout in class.", "Do not shout in class."], explanation: "El imperativo negativo se forma con Don't + infinitivo sin to." },
+        { id: "imp2", type: "fill", prompt: "Responde brevemente a la pregunta afirmativa: 'Do you study French?'", sentence: "Do you study French? — Yes, I ______.", blanks: [{ accepts: ["do"] }], explanation: "La pregunta comienza con 'Do', por lo que la respuesta corta afirmativa es 'Yes, I do'." },
+        { id: "imp3", type: "choice", prompt: "¿Cuál respuesta corta es gramaticalmente correcta para 'Is she your doctor?'?", options: ["Yes, she is.", "Yes, she's.", "Yes, is she.", "Yes, she does."], answer: 0, explanation: "En respuestas cortas afirmativas nunca se contrae: 'Yes, she is'." },
+        { id: "imp4", type: "fill", prompt: "Haz una sugerencia conjunta para empezar la reunión:", sentence: "______ start the meeting now!", blanks: [{ accepts: ["Let's", "let's"] }], explanation: "Let's (let us) + infinitivo introduce una propuesta para el grupo." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // 30 · Verbos Modales (Can, Could, Should, Must)
+  // =============================================================
+  {
+    id: "modals",
+    num: 30,
+    title: "Verbos Modales (Can, Could, Should, Must)",
+    tagline: "can · could · should · must · have to",
+    intro: "Los verbos modales modifican el significado del verbo principal para expresar habilidad, permiso, consejo, posibilidad u obligación.",
+    theory: [
+      {
+        type: "table",
+        caption: "Principales verbos modales y sus funciones",
+        head: ["Modal", "Función principal", "Ejemplo en inglés", "Traducción"],
+        rows: [
+          ["can / can't", "Habilidad o permiso informal", "I can play the piano.", "Sé tocar el piano."],
+          ["could / couldn't", "Petición educada o habilidad pasada", "Could you open the window?", "¿Podrías abrir la ventana?"],
+          ["should / shouldn't", "Consejo o recomendación", "You should drink more water.", "Deberías beber más agua."],
+          ["must", "Obligación fuerte o deber", "You must wear a seatbelt.", "Debes llevar puesto el cinturón."],
+          ["mustn't", "Prohibición estricta", "You mustn't smoke here.", "Está prohibido fumar aquí."],
+          ["don't have to", "Falta de obligación (opcional)", "You don't have to come today.", "No tienes por qué venir hoy."],
+        ],
+      },
+      {
+        type: "tip",
+        html: "💡 Distinción clave: <em lang='en'>Mustn't</em> significa <strong style='color:var(--chalk-red)'>prohibido</strong>. En cambio, <em lang='en'>Don't have to</em> significa que es <strong style='color:var(--chalk-green)'>opcional</strong> (no es obligatorio, pero puedes hacerlo si quieres).",
+      },
+      {
+        type: "examples",
+        items: [
+          { en: "She can speak three languages fluently.", es: "Ella sabe hablar tres idiomas con fluidez." },
+          { en: "Could you please lend me your pen?", es: "¿Podrías prestarme tu bolígrafo, por favor?" },
+          { en: "You look exhausted, you should take a rest.", es: "Pareces agotado, deberías descansar." },
+          { en: "Tomorrow is a holiday, so I don't have to get up early.", es: "Mañana es festivo, así que no tengo que madrugar." },
+        ],
+      },
+    ],
+    practice: {
+      hint: "Elige o escribe el modal adecuado para cada situación (consejo, obligación, habilidad).",
+      exercises: [
+        { id: "mod1", type: "choice", prompt: "En una biblioteca rige la norma de silencio absoluto. El cartel dice:", options: ["You mustn't make noise.", "You don't have to make noise.", "You should make noise.", "You can make noise."], answer: 0, explanation: "Mustn't indica prohibición categórica." },
+        { id: "mod2", type: "choice", prompt: "La entrada al museo es gratuita hoy:", options: ["You don't have to pay.", "You mustn't pay.", "You can't pay.", "You should pay."], answer: 0, explanation: "Don't have to indica que no hay obligación de pagar (es gratis)." },
+        { id: "mod3", type: "fill", prompt: "Pide ayuda a alguien de manera cortés y educada:", sentence: "______ you help me with this heavy box, please?", blanks: [{ accepts: ["Could"] }], explanation: "Could you...? es la fórmula educada de cortesía por excelencia." },
+        { id: "mod4", type: "fill", prompt: "Da un consejo de salud a un amigo resfriado:", sentence: "You have a bad cold. You ______ stay at home and rest.", blanks: [{ accepts: ["should", "ought to"] }], explanation: "Should (o ought to) se utiliza para expresar consejos y recomendaciones." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // 31 · Present Perfect
+  // =============================================================
+  {
+    id: "present-perfect",
+    num: 31,
+    title: "Present Perfect",
+    tagline: "have visited · already · yet · ever · never · since",
+    intro: "El Present Perfect conecta el pasado con el presente. Se emplea para experiencias de vida, acciones pasadas con relevancia actual y periodos de tiempo que aún no han concluido.",
+    theory: [
+      {
+        type: "table",
+        caption: "Estructura del Present Perfect (have / has + participio)",
+        head: ["Forma", "Estructura", "Ejemplo", "Traducción"],
+        rows: [
+          ["Afirmativa", "Sujeto + have/has + Past Participle", "She has lived here for 5 years.", "Ella vive / ha vivido aquí 5 años."],
+          ["Negativa", "Sujeto + haven't/hasn't + Participle", "I haven't seen that film yet.", "Aún no he visto esa película."],
+          ["Interrogativa", "Have/Has + sujeto + Participle?", "Have you ever tried sushi?", "¿Alguna vez has probado el sushi?"],
+        ],
+      },
+      {
+        type: "table",
+        caption: "Adverbios temporales clave del Present Perfect",
+        head: ["Adverbio", "Significado", "Posición habitual", "Ejemplo"],
+        rows: [
+          ["already", "ya (antes de lo previsto)", "entre have y participio", "I have already eaten."],
+          ["yet", "ya / todavía (negativa y pregunta)", "al final de la frase", "Has the train arrived yet?"],
+          ["ever", "alguna vez en la vida", "delante del participio", "Have you ever been to Rome?"],
+          ["never", "nunca", "delante del participio", "I have never seen snow."],
+          ["just", "acabar de (hace un instante)", "entre have y participio", "They have just arrived."],
+          ["for / since", "durante / desde", "al final con periodo o fecha", "for 10 years / since 2015"],
+        ],
+      },
+      {
+        type: "tip",
+        html: "💡 ¡Regla de oro! Si la frase incluye un marcador de tiempo cerrado en el pasado (<em lang='en'>yesterday, last year, in 2020, two days ago</em>), está <strong style='color:var(--chalk-red)'>terminantemente prohibido</strong> usar Present Perfect; debes usar <strong style='color:var(--chalk-green)'>Past Simple</strong>: <em lang='en'>I saw him yesterday</em> (nunca 'I have seen him yesterday').",
+      },
+      {
+        type: "examples",
+        items: [
+          { en: "Have you ever eaten Japanese food? — Yes, many times.", es: "¿Alguna vez has comido comida japonesa? — Sí, muchas veces." },
+          { en: "I have already finished all my homework.", es: "Ya he terminado todos mis deberes." },
+          { en: "She hasn't called me yet.", es: "Ella todavía no me ha llamado." },
+          { en: "We have known each other since 2018.", es: "Nos conocemos desde 2018." },
+        ],
+      },
+    ],
+    practice: {
+      hint: "Conecta have/has con el participio y utiliza los adverbios de tiempo correctamente.",
+      exercises: [
+        { id: "pp1", type: "fill", prompt: "Completa con la forma correcta de 'never' y 'be':", sentence: "I ______ to Australia.", blanks: [{ accepts: ["have never been"] }], explanation: "I + have + never + participio de be (been): have never been." },
+        { id: "pp2", type: "choice", prompt: "¿Cuál es la pregunta correcta para saber si alguien ha terminado una tarea?", options: ["Have you finished your homework yet?", "Did you finished your homework yet?", "Have you finish your homework already?", "Do you have finished your homework?"], answer: 0, explanation: "'Have you finished... yet?' es la construcción canónica con yet al final." },
+        { id: "pp3", type: "fill", prompt: "Completa con 'for' o 'since':", sentence: "She has worked as an architect ______ 2019.", blanks: [{ accepts: ["since"] }], explanation: "Since se emplea para indicar el punto de inicio en el tiempo (año, fecha, día)." },
+        { id: "pp4", type: "choice", prompt: "Ayer fui al cine. ¿Cuál es la opción correcta?", options: ["I went to the cinema yesterday.", "I have gone to the cinema yesterday.", "I have been to the cinema yesterday.", "I go to the cinema yesterday."], answer: 0, explanation: "Con un marcador temporal cerrado (yesterday) es obligatorio el Past Simple: I went." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // 32 · Present Perfect Continuous
+  // =============================================================
+  {
+    id: "present-perfect-continuous",
+    num: 32,
+    title: "Present Perfect Continuous",
+    tagline: "have been studying · How long · process vs. result",
+    intro: "El Present Perfect Continuous enfatiza la duración, el esfuerzo continuo y la actividad ininterrumpida que comenzó en el pasado y sigue en curso o cuyos efectos son palpables.",
+    theory: [
+      {
+        type: "table",
+        caption: "Estructura: have / has been + verbo en -ing",
+        head: ["Forma", "Estructura", "Ejemplo", "Traducción"],
+        rows: [
+          ["Afirmativa", "Sujeto + have/has been + V-ing", "I have been waiting for two hours.", "Llevo dos horas esperando."],
+          ["Negativa", "Sujeto + haven't/hasn't been + V-ing", "She hasn't been sleeping well lately.", "Ella no ha estado durmiendo bien últimamente."],
+          ["Interrogativa", "How long + have/has + suj + been + V-ing?", "How long have you been learning English?", "¿Cuánto tiempo llevas aprendiendo inglés?"],
+        ],
+      },
+      {
+        type: "table",
+        caption: "Contraste: Present Perfect Simple vs. Continuous",
+        head: ["Rasgo", "Present Perfect Simple", "Present Perfect Continuous"],
+        rows: [
+          ["Foco", "Resultado final o cantidad completada", "Proceso, duración o actividad en sí"],
+          ["Pregunta típica", "How many / how much?", "How long?"],
+          ["Ejemplo", "I have painted two rooms. (Terminadas)", "I have been painting the house. (Pintura en la ropa)"],
+        ],
+      },
+      {
+        type: "tip",
+        html: "💡 Los verbos de estado (<em lang='en'>state verbs</em> como <em lang='en'>know, understand, believe, love, like, have [posesión]</em>) NO se suelen usar en tiempos continuos. Decimos: <em lang='en'>I have known her for years</em> (nunca 'I have been knowing her').",
+      },
+      {
+        type: "examples",
+        items: [
+          { en: "He is completely exhausted because he has been running.", es: "Está completamente agotado porque ha estado corriendo." },
+          { en: "How long have you been living in this city?", es: "¿Cuánto tiempo llevas viviendo en esta ciudad?" },
+          { en: "It has been raining all afternoon.", es: "Ha estado lloviendo toda la tarde." },
+        ],
+      },
+    ],
+    practice: {
+      hint: "Usa have/has been + -ing para enfatizar la duración o el proceso continuo.",
+      exercises: [
+        { id: "ppc1", type: "fill", prompt: "Completa con el verbo 'study' en continuo:", sentence: "She has a headache because she ______ for five hours.", blanks: [{ accepts: ["has been studying"] }], explanation: "She + has been + studying expresa la duración ininterrumpida de la actividad." },
+        { id: "ppc2", type: "fill", prompt: "Completa la pregunta para saber cuánto tiempo lleva alguien trabajando:", sentence: "How long ______ you been working here?", blanks: [{ accepts: ["have"] }], explanation: "How long have you been working...? es la fórmula canónica." },
+        { id: "ppc3", type: "choice", prompt: "Esta mañana he leído tres capítulos enteros (resultado y cantidad):", options: ["I have read three chapters.", "I have been reading three chapters.", "I am reading three chapters.", "I readed three chapters."], answer: 0, explanation: "Para enfatizar el resultado y la cantidad lograda se usa el Present Perfect Simple: I have read." },
+        { id: "ppc4", type: "choice", prompt: "¿Cuál es la frase correcta con el verbo de estado 'know'?", options: ["I have known David for ten years.", "I have been knowing David for ten years.", "I am knowing David for ten years.", "I know David since ten years."], answer: 0, explanation: "Know es un state verb y no admite tiempos continuos: I have known David." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // 33 · Comparativos y Superlativos
+  // =============================================================
+  {
+    id: "comparatives",
+    num: 33,
+    title: "Comparativos y Superlativos",
+    tagline: "taller than · more expensive · the best · as ... as",
+    intro: "Aprende a comparar personas, lugares y cosas mediante adjetivos comparativos (-er / more... than), superlativos (-est / the most) y estructuras de igualdad (as... as).",
+    theory: [
+      {
+        type: "table",
+        caption: "Reglas de formación de comparativos y superlativos",
+        head: ["Tipo de adjetivo", "Comparativo (+ than)", "Superlativo (the + ...)"],
+        rows: [
+          ["Corto (1 sílaba): tall, fast", "taller than, faster than", "the tallest, the fastest"],
+          ["Corto acabado en CVC: big, hot", "bigger than, hotter than", "the biggest, the hottest"],
+          ["Acabado en -y: happy, easy", "happier than, easier than", "the happiest, the easiest"],
+          ["Largo (2+ sílabas): expensive, famous", "more expensive than, more famous than", "the most expensive, the most famous"],
+          ["Irregular: good", "better than", "the best"],
+          ["Irregular: bad", "worse than", "the worst"],
+          ["Irregular: far", "farther / further than", "the farthest / furthest"],
+        ],
+      },
+      {
+        type: "table",
+        caption: "Comparación de igualdad: as ... as",
+        head: ["Estructura", "Significado", "Ejemplo"],
+        rows: [
+          ["as + adjetivo + as", "tan ... como (igualdad)", "She is as tall as her brother."],
+          ["not as + adjetivo + as", "no tan ... como (inferioridad)", "This phone is not as expensive as that one."],
+        ],
+      },
+      {
+        type: "tip",
+        html: "💡 ¡Cuidado con los dobles comparativos! Nunca digas <em lang='en'>more better</em> o <em lang='en'>the most best</em>. Al ser irregulares, <em lang='en'>better</em> y <em lang='en'>the best</em> ya son comparativo y superlativo por sí mismos.",
+      },
+      {
+        type: "examples",
+        items: [
+          { en: "Madrid is bigger than Seville, but Tokyo is the biggest city.", es: "Madrid es más grande que Sevilla, pero Tokio es la ciudad más grande." },
+          { en: "Traveling by train is more comfortable than flying.", es: "Viajar en tren es más cómodo que volar." },
+          { en: "He is the best tennis player in our club.", es: "Él es el mejor tenista de nuestro club." },
+          { en: "My flat is not as big as yours.", es: "Mi piso no es tan grande como el tuyo." },
+        ],
+      },
+    ],
+    practice: {
+      hint: "Aplica las reglas morfológicas para formar comparativos y superlativos regulares e irregulares.",
+      exercises: [
+        { id: "comp1", type: "fill", prompt: "Forma el comparativo del adjetivo entre paréntesis:", sentence: "This book is ______ (interesting) than the movie.", blanks: [{ accepts: ["more interesting"] }], explanation: "Interesting es un adjetivo largo de 4 sílabas; lleva 'more interesting'." },
+        { id: "comp2", type: "fill", prompt: "Forma el superlativo del adjetivo entre paréntesis:", sentence: "Mount Everest is ______ (high) mountain on Earth.", blanks: [{ accepts: ["the highest"] }], explanation: "High es corto (1 sílaba): añade -est precedido del artículo 'the': the highest." },
+        { id: "comp3", type: "choice", prompt: "¿Cuál es el comparativo irregular de 'bad'?", options: ["worse", "badder", "more bad", "worst"], answer: 0, explanation: "Bad es irregular: bad → worse → the worst." },
+        { id: "comp4", type: "fill", prompt: "Completa con el comparativo irregular de 'good':", sentence: "My coffee was good, but yours smells even ______.", blanks: [{ accepts: ["better"] }], explanation: "El comparativo de good es better (good → better → the best)." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // 34 · Condicional Cero (Zero Conditional)
+  // =============================================================
+  {
+    id: "zero-conditional",
+    num: 34,
+    title: "Condicional Cero (Zero Conditional)",
+    tagline: "If + Present Simple, Present Simple · universal truths",
+    intro: "El Zero Conditional se emplea para hechos comprobados, leyes de la física, verdades científicas universales y hábitos causa-efecto invariables.",
+    theory: [
+      {
+        type: "table",
+        caption: "Estructura del Zero Conditional",
+        head: ["Cláusula condicional (If / When)", "Cláusula de resultado"],
+        rows: [
+          ["If + Present Simple", "Present Simple"],
+          ["If you heat ice,", "it melts. (El hielo se derrite)"],
+          ["If water reaches 100°C,", "it boils. (El agua hierve)"],
+          ["When people don't sleep,", "they feel tired. (La gente se siente cansada)"],
+        ],
+      },
+      {
+        type: "tip",
+        html: "💡 Si la oración empieza con la cláusula <em lang='en'>If</em>, se coloca una coma separando ambas partes: <em lang='en'>If you heat water, it boils.</em> Si se invierte el orden, no se usa coma: <em lang='en'>Water boils if you heat it.</em>",
+      },
+      {
+        type: "examples",
+        items: [
+          { en: "If you touch a flame, you burn yourself.", es: "Si tocas una llama, te quemas." },
+          { en: "If it rains, the grass gets wet.", es: "Si llueve, la hierba se moja." },
+          { en: "Plants die if they don't get enough water.", es: "Las plantas mueren si no reciben suficiente agua." },
+        ],
+      },
+    ],
+    practice: {
+      hint: "Mantén ambos verbos en Present Simple para expresar hechos científicos y verdades absolutas.",
+      exercises: [
+        { id: "cond0_1", type: "fill", prompt: "Completa el resultado en presente simple:", sentence: "If you freeze water, it ______ (turn) into ice.", blanks: [{ accepts: ["turns"] }], explanation: "Tercera persona singular (it): turn + s = turns." },
+        { id: "cond0_2", type: "fill", prompt: "Completa el hecho de la naturaleza:", sentence: "If it rains, the ground ______ (get) wet.", blanks: [{ accepts: ["gets"] }], explanation: "En Zero Conditional el resultado va en Present Simple: gets." },
+        { id: "cond0_3", type: "choice", prompt: "¿Para qué se utiliza principalmente el Zero Conditional?", options: ["Hechos científicos y verdades universales", "Planes hipotéticos futuros", "Arrepentimientos del pasado", "Peticiones de cortesía"], answer: 0, explanation: "El Zero Conditional expresa verdades científicas y leyes físicas incuestionables." },
+        { id: "cond0_4", type: "order", prompt: "Ordena las palabras para formar la frase condicional:", words: ["water,", "heat", "it boils.", "If you"], solution: [3, 1, 0, 2], accepts: ["if you heat water, it boils"], explanation: "If you heat water, it boils." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // 35 · Primer Condicional (First Conditional)
+  // =============================================================
+  {
+    id: "first-conditional",
+    num: 35,
+    title: "Primer Condicional (First Conditional)",
+    tagline: "If + Present Simple, will + base verb · real future",
+    intro: "El First Conditional habla del futuro real o muy probable: si se cumple una condición concreta en el presente, se producirá un determinado resultado en el futuro.",
+    theory: [
+      {
+        type: "table",
+        caption: "Estructura del First Conditional",
+        head: ["Cláusula con IF (Condición)", "Cláusula con WILL (Resultado futuro)"],
+        rows: [
+          ["If + Present Simple", "will / won't + verbo en forma base"],
+          ["If it rains tomorrow,", "we will stay at home."],
+          ["If she studies hard,", "she will pass the exam."],
+          ["If they don't hurry,", "they will miss the train."],
+        ],
+      },
+      {
+        type: "note",
+        html: "⚠️ <em lang='en'>Unless</em> significa 'a menos que' o 'si no' (<em lang='en'>unless = if not</em>): <em lang='en'>Unless you leave now, you will be late</em> (= <em lang='en'>If you don't leave now, you will be late</em>).",
+      },
+      {
+        type: "tip",
+        html: "💡 ¡PROHIBIDO usar <em lang='en'>will</em> en la cláusula con <em lang='en'>if</em>! Es uno de los errores más extendidos. Decir 'If it will rain, I will stay' es incorrecto. La fórmula correcta es siempre: <em lang='en'>If it rains, I will stay</em>.",
+      },
+      {
+        type: "examples",
+        items: [
+          { en: "If the weather is nice on Saturday, we will go for a hike.", es: "Si hace buen tiempo el sábado, iremos de excursión." },
+          { en: "I will call you if I finish work early.", es: "Te llamaré si termino de trabajar pronto." },
+          { en: "Unless you wear a coat, you will catch a cold.", es: "A menos que lleves abrigo, te resfriarás." },
+        ],
+      },
+    ],
+    practice: {
+      hint: "Asegúrate de conjugar la condición con If en Present Simple y el resultado con will + infinitivo.",
+      exercises: [
+        { id: "cond1_1", type: "fill", prompt: "Completa la condición en Present Simple:", sentence: "If it ______ (snow) tomorrow, the children will build a snowman.", blanks: [{ accepts: ["snows"] }], explanation: "La cláusula condicional con if exige Present Simple (it snows)." },
+        { id: "cond1_2", type: "fill", prompt: "Completa el resultado con 'will' + verbo:", sentence: "If you help me with the dishes, I ______ (buy) you an ice cream.", blanks: [{ accepts: ["will buy", "'ll buy"] }], explanation: "El resultado futuro se expresa con will + verbo base: will buy." },
+        { id: "cond1_3", type: "choice", prompt: "¿Cuál de estas cuatro oraciones es gramaticalmente correcta?", options: ["If I have time tonight, I will phone you.", "If I will have time tonight, I will phone you.", "If I have time tonight, I phone you.", "If I would have time tonight, I phone you."], answer: 0, explanation: "La cláusula 'if' va en Present Simple (have), nunca con 'will'." },
+        { id: "cond1_4", type: "fill", prompt: "Completa con la palabra que significa 'a menos que' (if not):", sentence: "______ you study hard, you will not pass the test.", blanks: [{ accepts: ["Unless", "unless"] }], explanation: "Unless = a menos que / si no." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // 36 · Segundo Condicional (Second Conditional)
+  // =============================================================
+  {
+    id: "second-conditional",
+    num: 36,
+    title: "Segundo Condicional (Second Conditional)",
+    tagline: "If + Past Simple, would + base verb · hypothetical",
+    intro: "El Second Conditional describe situaciones hipotéticas, imaginarias o poco probables en el presente o futuro, así como sueños, deseos y consejos avanzados.",
+    theory: [
+      {
+        type: "table",
+        caption: "Estructura del Second Conditional",
+        head: ["Cláusula con IF (Hipotética)", "Cláusula con WOULD (Resultado imaginado)"],
+        rows: [
+          ["If + Past Simple", "would / wouldn't + verbo en forma base"],
+          ["If I had a million dollars,", "I would travel around the world."],
+          ["If she lived in London,", "she would speak English every day."],
+          ["If we didn't have to work,", "we would go to the beach."],
+        ],
+      },
+      {
+        type: "table",
+        caption: "Dar consejos: If I were you, I would...",
+        head: ["Estructura", "Uso", "Ejemplo"],
+        rows: [
+          ["If I were you + would", "Fórmula clásica para aconsejar", "If I were you, I would accept the job."],
+          ["Would you rather...?", "Dilema de elección hipotética", "Would you rather have wings or breathe underwater?"],
+        ],
+      },
+      {
+        type: "tip",
+        html: "💡 En el Second Conditional se utiliza tradicionalmente <em lang='en'>were</em> para todas las personas gramaticales (incluidos <em lang='en'>I, he, she, it</em>). La expresión <em lang='en'>If I were you, I would...</em> es una de las construcciones más valoradas en exámenes oficiales de nivel A2/B1.",
+      },
+      {
+        type: "examples",
+        items: [
+          { en: "If I won the lottery, I would buy a house for my parents.", es: "Si ganara la lotería, compraría una casa para mis padres." },
+          { en: "What would you do if you were invisible for one day?", es: "¿Qué harías si fueras invisible por un día?" },
+          { en: "If I were you, I would consult a lawyer.", es: "Si yo fuera tú, consultaría a un abogado." },
+        ],
+      },
+    ],
+    practice: {
+      hint: "Usa el Past Simple tras el If y 'would' + forma base en el resultado.",
+      exercises: [
+        { id: "cond2_1", type: "fill", prompt: "Completa la cláusula hipotética con el verbo en Past Simple:", sentence: "If I ______ (know) the answer, I would tell you.", blanks: [{ accepts: ["knew"] }], explanation: "El pasado de know es irregular: knew." },
+        { id: "cond2_2", type: "fill", prompt: "Formula el consejo clásico usando 'were':", sentence: "If I ______ you, I would take that opportunity.", blanks: [{ accepts: ["were", "was"] }], explanation: "En Second Conditional formal se usa 'were' para aconsejar: If I were you." },
+        { id: "cond2_3", type: "fill", prompt: "Completa el resultado hipotético con 'would':", sentence: "If we had more money, we ______ (buy) a larger apartment.", blanks: [{ accepts: ["would buy"] }], explanation: "Would + forma base del verbo (buy): would buy." },
+        { id: "cond2_4", type: "choice", prompt: "¿Cuál es la expresión idiomática reina para aconsejar a un amigo?", options: ["If I were you, I would...", "If I am you, I will...", "If I was you, I do...", "If I would be you, I..."], answer: 0, explanation: "'If I were you, I would...' es la fórmula idiomática estándar para dar consejos." },
+      ],
+    },
+  },
 ];
