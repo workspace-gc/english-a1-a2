@@ -13,8 +13,8 @@ function exerciseIds() {
   return UNITS.flatMap((u) => u.practice.exercises.map((e) => e.id));
 }
 
-test("hay exactamente 10 unidades numeradas de 1 a 10", () => {
-  assert.equal(UNITS.length, 10);
+test("las unidades están numeradas consecutivamente de 1 a N", () => {
+  assert.ok(UNITS.length >= 10, "debe haber al menos 10 unidades");
   UNITS.forEach((unit, i) => {
     assert.equal(unit.num, i + 1);
   });
@@ -43,6 +43,7 @@ test("cada bloque de teoría tiene los campos que necesita", () => {
       switch (block.type) {
         case "p":
         case "note":
+        case "tip":
           assert.ok(typeof block.html === "string" && block.html.length > 0);
           break;
         case "list":

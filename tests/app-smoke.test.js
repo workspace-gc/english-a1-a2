@@ -22,7 +22,7 @@ const click = (el) => el.dispatch("click", { target: el, preventDefault() {} });
 const keyEnter = (el) => el.dispatch("keydown", { key: "Enter", preventDefault() {} });
 
 const unitContainer = document.getElementById("unidad");
-const tabsTrack = document.getElementById("tabs");
+const accordion = document.getElementById("modules-accordion");
 
 function currentArticle() {
   return unitContainer.children[0];
@@ -97,18 +97,19 @@ function solveExercise(li, ex) {
   }
 }
 
-test("render inicial: 10 pestañas, unidad 1 y progreso 0/10", () => {
-  assert.equal(tabsTrack.children.length, UNITS.length);
+test(`render inicial: acordeón con unidades, unidad 1 y progreso 0/${UNITS.length}`, () => {
+  const unitLinks = accordion.querySelectorAll(".module__link");
+  assert.equal(unitLinks.length, UNITS.length);
   const article = currentArticle();
   assert.equal(article.id, "unidad-1");
   assert.equal(
     document.getElementById("progress-label").textContent,
-    "0 de 10 unidades completadas"
+    `0 de ${UNITS.length} unidades completadas`
   );
   assert.equal(document.getElementById("progress-fill").style.transform, "scaleX(0)");
 });
 
-test("un alumno resuelve las 10 unidades: ruta completa de la UI", () => {
+test(`un alumno resuelve todas las unidades: ruta completa de la UI`, () => {
   for (const unit of UNITS) {
     window.location.hash = `#/unidad-${unit.num}`;
     fire("hashchange");
@@ -129,20 +130,20 @@ test("un alumno resuelve las 10 unidades: ruta completa de la UI", () => {
     // Progreso acumulado: N unidades completadas tras la unidad N
     assert.equal(
       document.getElementById("progress-label").textContent,
-      `${unit.num} de 10 unidades completadas`
+      `${unit.num} de ${UNITS.length} unidades completadas`
     );
   }
 });
 
-test("progreso final: barra al 100%, pestañas con ✓ y persistencia", () => {
+test("progreso final: barra al 100%, enlaces con ✓ y persistencia", () => {
   assert.equal(document.getElementById("progress-fill").style.transform, "scaleX(1)");
   assert.equal(
     document.getElementById("progress-label").textContent,
-    "10 de 10 unidades completadas"
+    `${UNITS.length} de ${UNITS.length} unidades completadas`
   );
-  for (const tab of tabsTrack.querySelectorAll(".tab")) {
-    const label = tab.querySelector(".tab__done");
-    assert.equal(label.textContent, "✓");
+  for (const link of accordion.querySelectorAll(".module__link")) {
+    const badge = link.querySelector(".link__badge");
+    assert.equal(badge.textContent, "✓");
   }
   const stored = JSON.parse(
     window.localStorage.getItem("english-a1a2.progress.v1")

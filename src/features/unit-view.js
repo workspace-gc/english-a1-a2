@@ -171,6 +171,9 @@ function renderBlock(block, audio) {
       return wrap;
     }
 
+    case "tip":
+      return html("p", `<span class="tip">${block.html}</span>`);
+
     default:
       return el("p");
   }

@@ -95,7 +95,7 @@ a {
 }
 
 .board :focus-visible,
-.tabs :focus-visible,
+.sidebar :focus-visible,
 .foot :focus-visible {
   outline-color: var(--chalk);
 }

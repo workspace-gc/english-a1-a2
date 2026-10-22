@@ -185,6 +185,10 @@ export function createDom() {
   const staticById = {
     unidad: new FakeNode("div"),
     tabs: new FakeNode("div"),
+    sidebar: new FakeNode("aside"),
+    "sidebar-toggle": new FakeNode("button"),
+    "sidebar-overlay": new FakeNode("div"),
+    "modules-accordion": new FakeNode("div"),
     "progress-fill": new FakeNode("div"),
     "progress-label": new FakeNode("p"),
   };
@@ -193,12 +197,16 @@ export function createDom() {
   const document = {
     body,
     createElement: (tag) => new FakeNode(tag),
+    createElementNS: (ns, tag) => new FakeNode(tag),
     createTextNode: (text) => {
       const node = new FakeNode(TEXT);
       node._text = String(text);
       return node;
     },
     getElementById: (id) => staticById[id] ?? null,
+    addEventListener(type, fn) {
+      (listeners[type] ??= []).push(fn);
+    },
   };
 
   const listeners = {};

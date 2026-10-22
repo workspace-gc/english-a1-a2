@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#1c2f26" />
   <title>Inglés A1–A2 · Guía interactiva de gramática y vocabulario</title>
-  <meta name="description" content="Diez unidades interactivas de inglés A1–A2: demostrativos, present simple, present continuous, WH questions, adverbios de frecuencia, fechas, pasados, vocabulario y autoevaluación." />
+  <meta name="description" content="Treinta y ocho unidades interactivas de inglés A1–A2: gramática, vocabulario, pronunciación y habilidades prácticas." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -30,7 +30,7 @@
         </svg>
       </h1>
       <p class="board__lede">
-        Diez unidades de gramática, vocabulario y práctica.
+        Treinta y ocho unidades de gramática, vocabulario, pronunciación y práctica.
         Lee la teoría, haz los ejercicios y recibe la corrección al instante.
       </p>
 
@@ -38,27 +38,39 @@
         <div class="board__progress-track" aria-hidden="true">
           <div class="board__progress-fill" id="progress-fill"></div>
         </div>
-        <p class="board__progress-label" id="progress-label">0 de 10 unidades completadas</p>
+        <p class="board__progress-label" id="progress-label">0 de 38 unidades completadas</p>
       </div>
-
-      <p class="board__note" aria-hidden="true">Empieza por la unidad 1 <span class="board__note-arrow">↓</span></p>
     </div>
   </header>
 
-  <nav class="tabs" aria-label="Unidades">
-    <div class="tabs__track" id="tabs"></div>
-  </nav>
+  <div class="app-layout">
+    <button class="sidebar-toggle" id="sidebar-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Abrir menú de unidades">
+      <span class="sidebar-toggle__bar"></span>
+      <span class="sidebar-toggle__bar"></span>
+      <span class="sidebar-toggle__bar"></span>
+    </button>
 
-  <main id="contenido" class="sheet" tabindex="-1">
-    <span class="sheet__punch sheet__punch--1" aria-hidden="true"></span>
-    <span class="sheet__punch sheet__punch--2" aria-hidden="true"></span>
-    <span class="sheet__punch sheet__punch--3" aria-hidden="true"></span>
-    <div id="unidad">
-      <noscript>
-        <p>Esta guía necesita JavaScript para mostrar los ejercicios interactivos. Activa JavaScript en tu navegador y recarga la página.</p>
-      </noscript>
-    </div>
-  </main>
+    <aside class="sidebar" id="sidebar" aria-label="Módulos y unidades">
+      <div class="sidebar__inner">
+        <nav class="modules-nav" aria-label="Módulos">
+          <div id="modules-accordion"></div>
+        </nav>
+      </div>
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebar-overlay" aria-hidden="true"></div>
+
+    <main id="contenido" class="sheet" tabindex="-1">
+      <span class="sheet__punch sheet__punch--1" aria-hidden="true"></span>
+      <span class="sheet__punch sheet__punch--2" aria-hidden="true"></span>
+      <span class="sheet__punch sheet__punch--3" aria-hidden="true"></span>
+      <div id="unidad">
+        <noscript>
+          <p>Esta guía necesita JavaScript para mostrar los ejercicios interactivos. Activa JavaScript en tu navegador y recarga la página.</p>
+        </noscript>
+      </div>
+    </main>
+  </div>
 
   <footer class="foot">
     <p>Guía de estudio de inglés A1–A2 · Hecha para practicar, no solo para leer.</p>
