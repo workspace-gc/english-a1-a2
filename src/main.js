@@ -33,6 +33,7 @@ route();
 // --- Acordeón -----------------------------------------------------------
 
 function buildAccordion() {
+  if (!accordion) return;
   accordion.replaceChildren();
   for (const mod of MODULES) {
     const moduleUnits = UNITS.filter((u) => mod.unitNums.includes(u.num));
@@ -250,20 +251,20 @@ function closeSidebar() {
   document.body.style.overflow = "";
 }
 
-sidebarToggle.addEventListener("click", () => {
-  if (sidebar.classList.contains("is-open")) {
+sidebarToggle?.addEventListener("click", () => {
+  if (sidebar?.classList.contains("is-open")) {
     closeSidebar();
   } else {
     openSidebar();
   }
 });
 
-sidebarOverlay.addEventListener("click", closeSidebar);
+sidebarOverlay?.addEventListener("click", closeSidebar);
 
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && sidebar.classList.contains("is-open")) {
+  if (e.key === "Escape" && sidebar?.classList.contains("is-open")) {
     closeSidebar();
-    sidebarToggle.focus();
+    sidebarToggle?.focus();
   }
 });
 
