@@ -44,11 +44,11 @@
 - [x] F4: Futuro, imperativo, modales, PP, PPC, comparativos, condicionales 0/1/2
 
 ### Fases 5–6: Pronunciación y Habilidades (unidades 37–38)
-- [ ] F5-6: Pronunciación completa + speaking y estrategias
+- [x] F5-6: Pronunciación completa + speaking y estrategias
 
 ### Tests y cierre
-- [ ] TST: Actualizar data-integrity.test.js y app-smoke.test.js
-- [ ] TST: Verificar `npm test` verde
+- [x] TST: Actualizar data-integrity.test.js y app-smoke.test.js
+- [x] TST: Verificar `npm test` verde
 
 ## Progreso
 - Rama creada: pendiente

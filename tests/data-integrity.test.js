@@ -13,8 +13,8 @@ function exerciseIds() {
   return UNITS.flatMap((u) => u.practice.exercises.map((e) => e.id));
 }
 
-test("las unidades están numeradas consecutivamente de 1 a N", () => {
-  assert.ok(UNITS.length >= 10, "debe haber al menos 10 unidades");
+test("hay exactamente 38 unidades numeradas de 1 a 38", () => {
+  assert.equal(UNITS.length, 38);
   UNITS.forEach((unit, i) => {
     assert.equal(unit.num, i + 1);
   });

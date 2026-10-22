@@ -2729,4 +2729,160 @@ export const UNITS = [
       ],
     },
   },
+
+  // =============================================================
+  // 37 · Pronunciación y Fonética
+  // =============================================================
+  {
+    id: "pronunciation",
+    num: 37,
+    title: "Pronunciación y Fonética",
+    tagline: "silent letters · /θ/ vs /ð/ · homophones · US vs UK",
+    intro: "El inglés no es un idioma fonético: las palabras no siempre se leen como se escriben. Domina las letras mudas, los pares mínimos vocálicos, los homófonos y las diferencias entre acentos.",
+    theory: [
+      {
+        type: "table",
+        caption: "Letras mudas (Silent letters) indispensables",
+        head: ["Letra muda", "Ejemplos en inglés", "Transcripción aproximada", "Significado"],
+        rows: [
+          ["L muda", "salmon, talk, walk, could, calm", "/ˈsæm.ən/, /tɔːk/, /wɔːk/", "salmón, hablar, caminar, podría, calma"],
+          ["K muda (antes de n)", "know, knife, knee, knight", "/nəʊ/, /naɪf/, /niː/", "saber, cuchillo, rodilla, caballero"],
+          ["W muda (antes de r)", "write, wrong, wrist, wrap", "/raɪt/, /rɒŋ/, /rɪst/", "escribir, equivocado, muñeca, envolver"],
+          ["B muda (final / debt)", "climb, doubt, debt, comb", "/klaɪm/, /daʊt/, /det/", "escalar, duda, deuda, peine"],
+          ["S muda", "island, aisle", "/ˈaɪ.lənd/, /aɪl/", "isla, pasillo"],
+        ],
+      },
+      {
+        type: "table",
+        caption: "Sonidos consonánticos y contrastes críticos",
+        head: ["Fonema", "Descripción y ejemplos", "Contraste clave"],
+        rows: [
+          ["/θ/ (th sorda)", "Sin vibración (como la 'z' española): think, three, teeth", "think /θɪŋk/ vs sink /sɪŋk/"],
+          ["/ð/ (th sonora)", "Con vibración vocal (como la 'd' suave): the, this, mother", "this /ðɪs/ vs dis /dɪs/"],
+          ["/h/ aspirada vs muda", "Aspirada suave: house, happy. Muda: hour, honest, honour", "an hour /aʊər/ vs a house /haʊs/"],
+          ["/ɪ/ vs /iː/", "Vocal corta relajada vs larga tensa: this /ðɪs/ vs these /ðiːz/", "ship /ʃɪp/ vs sheep /ʃiːp/"],
+        ],
+      },
+      {
+        type: "tip",
+        html: "💡 ¡Atención al pedir comida! En <em lang='en'>salmon</em> la letra 'l' es 100% muda: se pronuncia /ˈsæm.ən/ (muy parecido a 'sämon'). Lo mismo sucede en <em lang='en'>talk</em> /tɔːk/ y <em lang='en'>walk</em> /wɔːk/.",
+      },
+      {
+        type: "examples",
+        items: [
+          { en: "There, their and they're are pronounced identically: /ˈðeər/.", es: "There, their y they're se pronuncian exactamente igual: /ˈðeər/." },
+          { en: "The verb 'read' is /riːd/ in present and /red/ in past.", es: "El verbo 'read' es /riːd/ en presente y /red/ en pasado." },
+          { en: "Panic adds a 'k' in the -ing form: panicking /ˈpæn.ɪ.kɪŋ/.", es: "Panic añade una 'k' antes de -ing para mantener el sonido /k/." },
+        ],
+      },
+    ],
+    flash: {
+      decks: [
+        {
+          title: "Letras mudas y fonética",
+          items: [
+            { en: "salmon /ˈsæm.ən/", es: "salmón (l muda)" },
+            { en: "knife /naɪf/", es: "cuchillo (k muda)" },
+            { en: "write /raɪt/", es: "escribir (w muda)" },
+            { en: "island /ˈaɪ.lənd/", es: "isla (s muda)" },
+            { en: "doubt /daʊt/", es: "duda (b muda)" },
+            { en: "hour /aʊər/", es: "hora (h muda)" },
+            { en: "three /θriː/", es: "tres (th sorda)" },
+            { en: "brother /ˈbrʌð.ər/", es: "hermano (th sonora)" },
+          ],
+        },
+      ],
+    },
+    practice: {
+      hint: "Pon a prueba tu conocimiento de letras mudas, homófonos y patrones de pronunciación.",
+      exercises: [
+        { id: "phon1", type: "choice", prompt: "¿Cuál es la letra muda al pronunciar la palabra 'salmon'?", options: ["La letra 'l'", "La letra 'a'", "La letra 'o'", "La letra 'm'"], answer: 0, explanation: "En 'salmon' la letra 'l' no se pronuncia: suena /ˈsæm.ən/." },
+        { id: "phon2", type: "choice", prompt: "¿Cómo se pronuncia el verbo irregular 'read' en su forma de Past Simple?", options: ["Como el color 'red' /red/", "Como 'reed' /riːd/", "Como 'ride' /raɪd/", "Como 'rude' /ruːd/"], answer: 0, explanation: "En pasado, 'read' se pronuncia /red/, con el sonido vocálico del color rojo." },
+        { id: "phon3", type: "choice", prompt: "¿Cuál de estas tres palabras se pronuncia diferente a las otras dos?", options: ["Ninguna: there, their y they're se pronuncian exactamente igual /ðeər/", "there", "their", "they're"], answer: 0, explanation: "There, their y they're son homófonos perfectos: suenan de manera idéntica." },
+        { id: "phon4", type: "choice", prompt: "¿Qué sonido de 'th' tiene la palabra 'think'?", options: ["Sordo /θ/ (aire entre los dientes sin vibración)", "Sonoro /ð/ (con vibración vocal)", "Sonido de 't' fuerte", "Sonido de 's' silbante"], answer: 0, explanation: "'Think' tiene la 'th' sorda /θ/, similar a la 'z' peninsular." },
+        { id: "phon5", type: "choice", prompt: "Al formar el gerundio de 'panic', ¿qué letra se añade para conservar el sonido oclusivo /k/?", options: ["La letra 'k' (panicking)", "La letra 'c' (paniccing)", "La letra 'q' (panicqing)", "Ninguna letra (panicing)"], answer: 0, explanation: "Se añade una 'k' antes de -ing para que la 'c' no suene como una 's': panicking." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // 38 · Habilidades Prácticas y Conversación
+  // =============================================================
+  {
+    id: "skills",
+    num: 38,
+    title: "Habilidades Prácticas y Conversación",
+    tagline: "icebreakers · job interview · Would you rather · study tips",
+    intro: "Pon en práctica todo lo aprendido: guiones de conversación para romper el hielo, cómo afrontar una entrevista de trabajo básica y las mejores estrategias de inmersión.",
+    theory: [
+      {
+        type: "table",
+        caption: "Icebreakers (Preguntas para romper el hielo)",
+        head: ["Pregunta en inglés", "Traducción", "Cuándo usarla"],
+        rows: [
+          ["What is the weather like where you live?", "¿Qué tiempo hace por donde vives?", "Charla inicial informal"],
+          ["What kind of music do you like?", "¿Qué tipo de música te gusta?", "Conocer gustos personales"],
+          ["Where are you from originally?", "¿De dónde eres originariamente?", "Encuentros multiculturales"],
+          ["What do you like to do in your free time?", "¿Qué te gusta hacer en tu tiempo libre?", "Hobbies e intereses comunes"],
+          ["Have you been here before?", "¿Has estado aquí antes?", "En eventos, conferencias o viajes"],
+        ],
+      },
+      {
+        type: "table",
+        caption: "Job Interview: preguntas clásicas y estructura",
+        head: ["Pregunta del entrevistador", "Estrategia de respuesta", "Ejemplo"],
+        rows: [
+          ["Tell me about yourself.", "Fórmula Presente → Pasado → Futuro", "Currently I am... Before that, I worked as... Now I want to..."],
+          ["What are your greatest strengths?", "Menciona 2 fortalezas con ejemplo real", "I am very organized and I communicate well with clients."],
+          ["Resume & Cover Letter", "Estructura estándar de CV anglosajón", "Contact details, Summary, Experience, Education, Skills"],
+        ],
+      },
+      {
+        type: "list",
+        items: [
+          "<strong>Subtítulos:</strong> visualiza series y vídeos siempre con <em>audio en inglés y subtítulos en inglés</em> (nunca en español, para entrenar la correlación fonema-grafema).",
+          "<strong>Series recomendadas A1-A2:</strong> <em>Modern Family, The Good Place, Jane the Virgin, Friends</em> (evitar al inicio series con dialectos o jerga densa como <em>Peaky Blinders</em> o <em>Game of Thrones</em>).",
+          "<strong>Lectura graduada:</strong> clásicos infantiles ilustrados como <em>Dr. Seuss, Room on the Broom, Guess How Much I Love You</em> y adaptaciones de Disney.",
+          "<strong>Técnicas activas:</strong> post-its con vocabulario en objetos de casa y código de colores para tiempos verbales.",
+        ],
+      },
+      {
+        type: "tip",
+        html: "💡 El secreto de la inmersión: configura el idioma de tu teléfono móvil, tu navegador y tus aplicaciones en <strong style='color:var(--chalk-green)'>inglés</strong>. Añadirás más de 50 palabras nuevas a tu vocabulario pasivo sin esfuerzo desde la primera semana.",
+      },
+      {
+        type: "examples",
+        items: [
+          { en: "Would you rather live in a big city or in a small quiet town?", es: "¿Preferirías vivir en una gran ciudad o en un pueblo pequeño y tranquilo?" },
+          { en: "Nice to meet you! How long have you been living here?", es: "¡Encantado de conocerte! ¿Cuánto tiempo llevas viviendo aquí?" },
+          { en: "I would describe myself as a proactive and reliable team player.", es: "Me describiría a mí mismo como un colaborador de equipo proactivo y de confianza." },
+        ],
+      },
+    ],
+    flash: {
+      decks: [
+        {
+          title: "Speaking e Icebreakers",
+          items: [
+            { en: "What do you do for a living?", es: "¿A qué te dedicas profesionalmente?" },
+            { en: "Where are you from originally?", es: "¿De dónde eres originariamente?" },
+            { en: "Would you rather...?", es: "¿Preferirías...?" },
+            { en: "strengths and weaknesses", es: "fortalezas y debilidades" },
+            { en: "cover letter", es: "carta de presentación" },
+            { en: "reliable", es: "de confianza / fiable" },
+            { en: "team player", es: "persona que trabaja bien en equipo" },
+          ],
+        },
+      ],
+    },
+    practice: {
+      hint: "Selecciona las mejores estrategias de conversación, entrevista de trabajo y estudio.",
+      exercises: [
+        { id: "skl1", type: "choice", prompt: "¿Qué combinación de subtítulos es la más efectiva para el aprendizaje de A1 a A2?", options: ["Audio en inglés + subtítulos en inglés", "Audio en inglés + subtítulos en español", "Audio en español + subtítulos en inglés", "Audio en inglés sin subtítulos desde el día 1"], answer: 0, explanation: "Ver contenidos con audio y subtítulos en inglés estimula simultáneamente el oído y la comprensión escrita." },
+        { id: "skl2", type: "choice", prompt: "¿Cuál es una pregunta adecuada y segura para romper el hielo de forma educada?", options: ["What kind of music do you like?", "How much money do you earn?", "Why did you wear that shirt?", "Are you rich?"], answer: 0, explanation: "Preguntas sobre música, gustos o el clima son icebreakers amables y universales." },
+        { id: "skl3", type: "choice", prompt: "¿Cuál es la estructura gramatical correcta con 'Would you rather'?", options: ["Would you rather live in the city or in the country?", "Would you rather living in the city or in the country?", "Would you rather to live in the city or in the country?", "Do you would rather live in the city?"], answer: 0, explanation: "'Would you rather' va seguido de la forma base del verbo (infinitivo sin to): live." },
+        { id: "skl4", type: "choice", prompt: "¿Cuál de estas series es la más recomendada para estudiantes A1-A2 por la claridad y cotidianidad de su lenguaje?", options: ["Modern Family", "Peaky Blinders", "Suits", "Game of Thrones"], answer: 0, explanation: "Modern Family utiliza un registro cotidiano, claro y familiar, ideal para fijar estructuras A1-A2." },
+      ],
+    },
+  },
 ];
